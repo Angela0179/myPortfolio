@@ -3,21 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="logo"></div>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">my</a></li>
-        </ul>
+    <header class="header">
+      <a class="logo" href="index.html">Angela <span>Nnechi</span></a>
+      <nav class="nav-bar">
+        <a href="#" id="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+        <a href="#">Education</a>
       </nav>
+      <div class="bars">
+        <button class="bar menu-icon" type="button">
+          <i id="barz" class="fa-solid fa-bars"></i>
+        </button>
+      </div>
     </header>
+    <section class="home section hidden">
+      <div class="container">
+        <div class="row">
+          <div class="home-info">
+            <h1 class="hello">
+              Hello,my name <span class="name">Angela Nnechi</span>
+            </h1>
+            <h1 class="my-proffession">
+              I'm a <span class="typing"> Frontend Engineer</span>
+            </h1>
+            <h3>
+              As a Frontend Engineer with over a year of hands-on experience, I
+              specialize in crafting visually stunning and user- friendly
+              websites and mobile apps. My expertize spans across the latest web
+              technologies, includng html, CSS, and JavaScript, and moderm
+              framework such as React js. have a strong understanding of
+              UI/UXdesign, ensuring that every project I work on is esthetically
+              pleasing and functional.
+            </h3>
+            <h3>
+              Additionally,my skills in graphic design allow me to create custom
+              visuals that elevate user experience and brand activities. Whether
+              building responsive websites or designing sleek moile apps, my
+              goal is to deliver high quality solutions that are intuitive,
+              engaging and lastly visually compelling
+            </h3>
+            <div class="socials">
+              <a href="#"><i class="bx bxl-whatsapp"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <a href="#contact" class="btn hire-me">Hire me</a>
+          </div>
+          <div class="home-img">
+            <img src="images/image3.jpg" alt="home-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about section-->
+
     <script src="main.js"></script>
   </body>
 </html>
