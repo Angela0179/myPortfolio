@@ -792,7 +792,11 @@ form textarea {
 @media (max-width: 450px) {
   .bars {
     display: flex;
+<<<<<<< HEAD
     margin-right: 3rem;
+=======
+    margin-left: 9rem;
+>>>>>>> f0ff25122ce510b718dd04280468584c99cd4b8d
   }
   .logo {
     font-size: 20px;
