@@ -400,7 +400,7 @@ h1.my-proffession span {
 }
 
 /*my skils*/
-section {
+#skil {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -770,6 +770,26 @@ form textarea {
   .home {
     flex-direction: column-reverse;
   }
+  .logo ::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: var(--pri-color);
+    top: 60px;
+    left: 5px;
+  }
+  .logo ::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    background-color: var(--pri-color);
+    top: 60px;
+    left: 5px;
+    margin-top: 5px;
+  }
+
   .row {
     flex-direction: column-reverse;
     height: auto;
@@ -781,6 +801,9 @@ form textarea {
     max-width: 100%;
   }
   .home-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 45rem;
     min-height: 25vh;
     flex: 0 0 40%;
@@ -791,10 +814,10 @@ form textarea {
     height: 50%;
     object-fit: cover;
     border-radius: 5%;
-    margin-left: 30%;
   }
   .hire-me {
     width: 40%;
+    margin-top: 3rem;
   }
   /*about*/
   .about {
@@ -808,6 +831,9 @@ form textarea {
     flex: 0 0 40%;
     padding: 1px;
     margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .about-img img {
     width: 100%;
@@ -815,15 +841,14 @@ form textarea {
     border-radius: 5%;
     object-fit: cover;
 
-    box-shadow: 0 0 95px var(--pri-color), 0 0 95px var(--main-color),
+    box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--main-color),
       0 0 95px var(--pri-color);
     border: 5px solid var(--text-color);
     outline: 3px solid var(--main-color);
   }
   #about-img {
     flex: 0 0 40%;
-    margin-top: 10%;
-    margin-left: 15%;
+    margin-top: 5%;
   }
   .layer h5 {
     font-size: 10px;
@@ -837,6 +862,14 @@ form textarea {
   .layer i {
     margin-top: 3px;
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+  .contact-form {
+    margin-left: 3rem;
+  }
   .contact-form form input,
   form textarea {
     border: none;
@@ -849,15 +882,66 @@ form textarea {
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
   }
+  #skil {
+    display: flex;
+    flex-direction: column;
+  }
+  .container1 {
+    width: 70%;
+    height: 500px;
+    padding: 25px 10px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .logo ::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: var(--pri-color);
+    top: 75px;
+    left: 5px;
+  }
+  .logo ::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    background-color: var(--pri-color);
+    top: 75px;
+    left: 5px;
+    margin-top: 5px;
+  }
 }
 @media (max-width: 450px) {
   .bars {
     display: flex;
-    margin-right: 3rem;
+    margin-right: 6rem;
   }
   .logo {
     font-size: 20px;
     flex-wrap: nowrap;
+  }
+
+  .logo ::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background-color: var(--pri-color);
+    top: 75px;
+    left: 5px;
+  }
+  .logo ::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    background-color: var(--pri-color);
+    top: 75px;
+    left: 5px;
+    margin-top: 5px;
   }
   h1 {
     font-size: 20px;
