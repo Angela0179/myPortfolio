@@ -703,7 +703,7 @@ form textarea {
 }
 .contact-form form .send:hover {
   background-color: var(--pri-color);
-  box-shadow: 1px 1px 16px var(--pri-color), 1px 1px 16px var(--pri-color);
+  box-shadow: 1px 1px 6px var(--pri-color), 1px 1px 6px var(--pri-color);
 }
 
 /*last text */
