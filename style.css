@@ -156,10 +156,10 @@ nav {
   border-radius: 5px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 45px var(--pri-color), 0 0 25px var(--main-color),
+  box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--pri-color),
     0 0 15px var(--pri-color);
   border: 5px solid var(--text-color);
-  outline: 3px solid var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 
 .row {
@@ -239,7 +239,7 @@ h1.my-proffession span {
 
 .hire-me:hover {
   border: 2px solid var(--sec-color);
-  box-shadow: 0 0 10px #850753, 0 0 15px #850753;
+  box-shadow: 0 0 1px #850753, 0 0 1px #850753;
   transform: scale(1, 1);
   transition: 0.4s ease-in-out;
   color: var(--text-color);
@@ -288,8 +288,8 @@ h1.my-proffession span {
   font-family: "poppins", sans-serif;
 }
 .about-img {
-  max-width: 35rem;
-  max-height: 55vh;
+  width: 42rem;
+  height: 65vh;
   flex: 0 0 40%;
   padding: 1px;
   margin-top: 5rem;
@@ -300,10 +300,10 @@ h1.my-proffession span {
   border-radius: 5px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--main-color),
+  box-shadow: 0 0 15px var(--pri-color), 0 0 15px var(--main-color),
     0 0 25px var(--pri-color);
   border: 5px solid var(--text-color);
-  outline: 3px solid var(--main-color);
+  outline: 1px solid var(--main-color);
 }
 #about-img {
   flex: 0 0 40%;
@@ -744,28 +744,39 @@ form textarea {
   }
   nav {
     position: absolute;
-    top: 89px;
+    top: 1px;
     left: 0;
     margin: 0;
     display: flex;
-    background-color: #779fed;
+    background-color: #fffffff9;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    height: 1024px;
     /* display: none; */
     z-index: 99;
     padding: 20px;
     display: none;
   }
+  .nav-bar a {
+    color: #00000e;
+    padding-bottom: 1rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    font-family: inherit;
+  }
   nav.show {
     display: flex;
-    width: 100%;
+    width: 30%;
   }
   .nav-bar a:hover {
     transition: 0.5s ease-in-out;
-    color: #000;
-    border-bottom: 3px solid #000;
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
   }
   /*section*/
   .home {
