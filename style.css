@@ -148,7 +148,7 @@ nav {
   max-height: 59vh;
   flex: 0 0 40%;
   padding: 1px;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 .home-img img {
   width: 100%;
@@ -156,10 +156,10 @@ nav {
   border-radius: 5px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--pri-color),
-    0 0 15px var(--pri-color);
-  border: 5px solid var(--text-color);
-  outline: 1px solid var(--main-color);
+
+  box-shadow: 0 0 15px gray, 0 0 15px gray;
+  /* border: 1px solid var(--text-color); */
+  /* outline: 1px solid var(--main-color); */
 }
 
 .row {
@@ -300,10 +300,10 @@ h1.my-proffession span {
   border-radius: 5px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 0 15px var(--pri-color), 0 0 15px var(--main-color),
-    0 0 25px var(--pri-color);
-  border: 5px solid var(--text-color);
-  outline: 1px solid var(--main-color);
+  box-shadow: 0 0 15px gray, 0 0 15px gray;
+
+  /* border: 1px solid var(--text-color); */
+  /* outline: 1px solid var(--main-color); */
 }
 #about-img {
   flex: 0 0 40%;
