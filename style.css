@@ -927,7 +927,8 @@ form textarea {
 @media (max-width: 450px) {
   .bars {
     display: flex;
-    margin-right: 6rem;
+    margin-right: 10rem;
+    margin-left: 26rem;
   }
   .logo {
     font-size: 20px;
@@ -971,5 +972,17 @@ form textarea {
   }
   .layer p {
     font-size: 5px;
+  }
+}
+@media (max-width: 390px) {
+  .bars {
+    display: flex;
+    margin-left: 24rem;
+  }
+}
+@media (max-width: 360px) {
+  .bars {
+    display: flex;
+    margin-left: 20rem;
   }
 }
