@@ -363,7 +363,7 @@ h1.my-proffession span {
   font-weight: 500;
   border-radius: 20px;
   transition: background 0, 5s, transform 0.5s;
-  box-shadow: 1px 1px 10px #779fed;
+  box-shadow: 1px 1px 3px #779fed;
 }
 .services-list div i {
   font-size: 30px;
@@ -692,18 +692,16 @@ form textarea {
 .contact-form form .send {
   display: inline-block;
   padding: 12px 40px;
-  background-color: #779fed;
+  background-color: #032055d5;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 600;
   opacity: 1;
   border-radius: 10px;
-  box-shadow: 1px 1px 16px #779fed;
 }
 .contact-form form .send:hover {
   background-color: var(--pri-color);
-  box-shadow: 1px 1px 6px var(--pri-color), 1px 1px 6px var(--pri-color);
 }
 
 /*last text */
