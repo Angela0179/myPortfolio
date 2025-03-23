@@ -142,9 +142,22 @@ nav {
   align-items: center;
   justify-content: center;
   max-width: 100%;
+  background-image: url(images/hero.jpeg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  height: 87vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000083;
 }
 .home-img {
-  max-width: 39rem;
+  max-width: 59rem;
   max-height: 59vh;
   flex: 0 0 40%;
   padding: 1px;
@@ -155,7 +168,7 @@ nav {
   height: 100%;
   border-radius: 5px;
   object-fit: cover;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 
   box-shadow: 0 0 15px gray, 0 0 15px gray;
   /* border: 1px solid var(--text-color); */
@@ -277,7 +290,7 @@ h1.my-proffession span {
 } */
 
 .about {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
