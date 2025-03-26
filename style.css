@@ -1005,7 +1005,7 @@ form textarea {
   }
   .home {
     flex-direction: column-reverse;
-    height: 98vh;
+    height: 108vh;
     object-fit: contain;
     background-size: cover;
   }
