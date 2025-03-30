@@ -247,7 +247,8 @@ h1.my-proffession span {
   border-radius: 5px;
   font-weight: 600;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 0.1rem;
+  margin-bottom: 2rem;
 }
 
 .hire-me:hover {
@@ -291,14 +292,16 @@ h1.my-proffession span {
 
 .about {
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   align-items: center;
-  gap: 1.5rem;
-  justify-content: center;
+  gap: 8rem;
+  justify-content: space-between;
   background-color: #fff;
   color: #000;
-  padding: 5%;
+  padding: 8%;
   font-family: "poppins", sans-serif;
+  width: 100%;
+  height: auto;
 }
 .about-img {
   width: 42rem;
@@ -312,16 +315,14 @@ h1.my-proffession span {
   height: 100%;
   border-radius: 5px;
   object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 15px gray, 0 0 15px gray;
 
   /* border: 1px solid var(--text-color); */
   /* outline: 1px solid var(--main-color); */
 }
 #about-img {
   flex: 0 0 40%;
-  margin-top: 10%;
-  margin-left: 10%;
+  margin-top: 3%;
+  margin-left: 1%;
 }
 .about-text h2 {
   font-size: 4rem;
@@ -830,7 +831,9 @@ form textarea {
   }
   .home {
     flex-direction: column-reverse;
-    height: 97vh;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
   }
 
   .home-info {
@@ -916,10 +919,13 @@ form textarea {
     border-radius: 5%;
     object-fit: cover;
 
-    box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--main-color),
+    /* box-shadow: 0 0 25px var(--pri-color), 0 0 25px var(--main-color),
       0 0 95px var(--pri-color);
     border: 5px solid var(--text-color);
-    outline: 3px solid var(--main-color);
+    outline: 3px solid var(--main-color); */
+  }
+  .about-text p {
+    font-size: 1.5rem;
   }
   #about-img {
     flex: 0 0 40%;
@@ -990,10 +996,15 @@ form textarea {
   }
   .home {
     flex-direction: column-reverse;
-    height: 97vh;
+    height: auto;
+    object-fit: contain;
+    background-size: cover;
   }
 }
 @media (max-width: 450px) {
+  body {
+    overflow-x: hidden;
+  }
   .bars {
     display: flex;
     margin-right: 10rem;
@@ -1005,7 +1016,7 @@ form textarea {
   }
   .home {
     flex-direction: column-reverse;
-    height: 108vh;
+    height: auto;
     object-fit: contain;
     background-size: cover;
   }
@@ -1035,7 +1046,7 @@ form textarea {
   .home-info h3 {
     font-family: "poppins", serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
   }
   .socials a {
@@ -1062,7 +1073,7 @@ form textarea {
     background: var(--pri-color);
     padding: 8px 10px;
     border-radius: 40px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     border: 2px solid var(--pri-color);
     color: var(--text-color);
     border-radius: 5px;
@@ -1087,16 +1098,43 @@ form textarea {
   .layer p {
     font-size: 5px;
   }
+  .containers {
+    padding: 70px;
+  }
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+  .about-text h4 {
+    font-size: 2.5rem;
+  }
+  .services h1 span {
+    font-size: 3rem;
+  }
+  .services h1 {
+    font-size: 3rem;
+  }
+  .main-text h1 {
+    font-size: 3rem;
+  }
 }
 @media (max-width: 390px) {
   .bars {
     display: flex;
     margin-left: 24rem;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 @media (max-width: 360px) {
   .bars {
     display: flex;
     margin-left: 20rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .about {
+    width: 100%;
   }
 }
